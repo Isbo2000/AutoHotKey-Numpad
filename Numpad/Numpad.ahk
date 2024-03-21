@@ -28,14 +28,24 @@ ChangeVolume(app, change, timeout) {
 *NumpadDown::Volume_Down
 
 *NumpadPgUp::{
-	ChangeVolume("Spotify", "+5", 1000)
+	if (GetKeyState("Control")) {
+		change := "+1"
+	} else {
+		change := "+5"
+	}
+	ChangeVolume("Spotify", change, 1000)
 }
 
 *NumpadPgDn::{
 	if (minimized) {
 		global minimized := false
 	} else if (!minimized) {
-		ChangeVolume("Spotify", "-5", 1000)
+		if (GetKeyState("Control")) {
+			change := "-1"
+		} else {
+			change := "-5"
+		}
+		ChangeVolume("Spotify", change, 1000)
 	}
 }
 
