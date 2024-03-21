@@ -1,9 +1,15 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 global minimized := false
 global svv := "./Assets/SoundVolumeView.exe"
 global muted := "./Icons/mute.ico"
 global unmuted := "./Icons/default.ico"
 global microphone := "Microphone (microphone)"
+
+ChangeVolume(app, change, timeout) {
+	RunWait(svv ' /ChangeVolume "' app '" ' change)
+	ToolTip(app " Vol: " RegExReplace(RunWait(svv ' /Stdout /GetPercent "' app '"'), "(?(?<=.)0|)$") "%")
+	SetTimer () => ToolTip(), -timeout
+}
 
 *NumpadLeft::Media_Prev
 
@@ -18,18 +24,14 @@ global microphone := "Microphone (microphone)"
 *NumpadDown::Volume_Down
 
 *NumpadPgUp::{
-	RunWait(svv ' /ChangeVolume "Spotify" +5')
-	ToolTip("Spotify Vol: " RegExReplace(RunWait(svv ' /Stdout /GetPercent "Spotify"'), "0$") "%")
-	SetTimer () => ToolTip(), -1000
+	ChangeVolume("Spotify", "+5", 1000)
 }
 
 *NumpadPgDn::{
 	if (minimized) {
 		global minimized := false
 	} else if (!minimized) {
-		RunWait(svv ' /ChangeVolume "Spotify" -5*')
-		ToolTip("Spotify Vol: " RegExReplace(RunWait(svv ' /Stdout /GetPercent "Spotify"'), "0$") "%")
-		SetTimer () => ToolTip(), -1000
+		ChangeVolume("Spotify", "-5", 1000)
 	}
 }
 
