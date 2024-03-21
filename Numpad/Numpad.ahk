@@ -1,14 +1,18 @@
-#Requires AutoHotkey v2.0
+﻿#Requires AutoHotkey v2.0
 global minimized := false
 global svv := "./Assets/SoundVolumeView.exe"
 global muted := "./Icons/mute.ico"
 global unmuted := "./Icons/default.ico"
 global microphone := "Microphone (microphone)"
 
+Timer(funcname, timeout, params*) {
+	funcname(params*)
+	SetTimer () => funcname(), -timeout
+}
+
 ChangeVolume(app, change, timeout) {
-	RunWait(svv ' /ChangeVolume "' app '" ' change)
-	ToolTip(app " Vol: " RegExReplace(RunWait(svv ' /Stdout /GetPercent "' app '"'), "(?(?<=.)0|)$") "%")
-	SetTimer () => ToolTip(), -timeout
+	RunWait(svv " /ChangeVolume " app " " change)
+	Timer(ToolTip, timeout, (app " Vol: " RegExReplace(RunWait(svv " /Stdout /GetPercent " app), "(?(?<=.)0|)$") "%"))
 }
 
 *NumpadLeft::Media_Prev
@@ -55,17 +59,13 @@ ChangeVolume(app, change, timeout) {
 	SoundSetMute(-1,, microphone)
 	if (SoundGetMute(, microphone)) {
 		TraySetIcon(muted,, true)
-		TrayTip
-		TrayTip("Microphone", "Muted")
-		SetTimer () => TrayTip(), -1500
-		ToolTip("Mic Muted")
-		SetTimer () => ToolTip(), -1000
+		TrayTip()
+		Timer(TrayTip, 1500, "Muted", "Microphone")
+		Timer(ToolTip, 1000, ("Mic Muted"))
 	} else {
 		TraySetIcon(unmuted,, false)
-		TrayTip
-		TrayTip("Microphone", "Unmuted")
-		SetTimer () => TrayTip(), -1500
-		ToolTip("Mic Unmuted")
-		SetTimer () => ToolTip(), -1000
+		TrayTip()
+		Timer(TrayTip, 1500, "Unmuted", "Microphone")
+		Timer(ToolTip, 1000, ("Mic Unmuted"))
 	}
 }
