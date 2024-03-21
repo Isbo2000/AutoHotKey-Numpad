@@ -1,6 +1,6 @@
 ﻿#Requires AutoHotkey v2.0
 global minimized := false
-global svv := "./Assets/SoundVolumeView.exe"
+global svv := "./SoundVolumeView/SoundVolumeView.exe"
 global muted := "./Icons/mute.ico"
 global unmuted := "./Icons/default.ico"
 global microphone := "Microphone (microphone)"
