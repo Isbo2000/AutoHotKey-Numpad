@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 global minimized := false
 global svv := "./SoundVolumeView/SoundVolumeView.exe"
 global muted := "./Icons/mute.ico"
@@ -30,6 +30,8 @@ ChangeVolume(app, change, timeout) {
 *NumpadPgUp::{
 	if (GetKeyState("Control")) {
 		change := "+1"
+	} else if (GetKeyState("Shift")) {
+		change := "+10"
 	} else {
 		change := "+5"
 	}
@@ -42,6 +44,8 @@ ChangeVolume(app, change, timeout) {
 	} else if (!minimized) {
 		if (GetKeyState("Control")) {
 			change := "-1"
+		} else if (GetKeyState("Shift")) {
+			change := "-10"
 		} else {
 			change := "-5"
 		}
