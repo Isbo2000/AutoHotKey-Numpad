@@ -1,4 +1,4 @@
-#Requires AutoHotkey v2.0
+﻿#Requires AutoHotkey v2.0
 global minimized := false
 global svv := "./SoundVolumeView/SoundVolumeView.exe"
 global muted := "./Icons/mute.ico"
@@ -14,6 +14,8 @@ ChangeVolume(app, change, timeout) {
 	RunWait(svv " /ChangeVolume " app " " change)
 	Timer(ToolTip, timeout, (app " Vol: " RegExReplace(RunWait(svv " /Stdout /GetPercent " app), "(?(?<=.)0|)$") "%"))
 }
+
+*NumpadEnd::DllCall("LockWorkStation")
 
 *NumpadLeft::Media_Prev
 
@@ -54,7 +56,7 @@ ChangeVolume(app, change, timeout) {
 }
 
 *NumpadEnter::{
-	Send("{Media_Stop}")
+	;Send("{Media_Stop}")
 	WinMinimizeAll
 	global minimized := true
 	Loop {
