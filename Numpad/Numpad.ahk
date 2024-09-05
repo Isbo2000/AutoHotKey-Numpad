@@ -1,19 +1,38 @@
 ﻿#Requires AutoHotkey v2.0
 global minimized := false
+global MyGui := false
 global svv := "./SoundVolumeView/SoundVolumeView.exe"
 global muted := "./Icons/mute.ico"
 global unmuted := "./Icons/default.ico"
 global microphone := "Microphone (microphone)"
 
-Timer(funcname, timeout, params*) {
+tipTimer(funcname, timeout, params*) {
 	funcname(params*)
 	SetTimer () => funcname(), -timeout
 }
 
+Notification(text, timeout, width := 100) {
+	if (MyGui) {
+		MyGui.Destroy()
+	}
+	global MyGui := Gui()
+	MyGui.Opt("+AlwaysOnTop -Caption +ToolWindow")
+	MyGui.BackColor := "000000"
+	MyGui.SetFont("s20")
+	MyGui.Add("Text", ("cffffff Center " width " h35"), text)
+	WinSetTransColor(" 175", MyGui)
+	MyGui.Opt("Border")
+	MyGui.Show("x864 y971 NoActivate")
+	SetTimer () => MyGui.Destroy(), timeout
+}
+
 ChangeVolume(app, change, timeout) {
 	RunWait(svv " /ChangeVolume " app " " change)
-	Timer(ToolTip, timeout, (app " Vol: " RegExReplace(RunWait(svv " /Stdout /GetPercent " app), "(?(?<=.)0|)$") "%"))
+	volume := app " Vol: " RegExReplace(RunWait(svv " /Stdout /GetPercent " app), "(?(?<=.)0|)$") "%"
+	Notification(volume, timeout, 215)
 }
+
+*NumpadHome::NumpadHome
 
 *NumpadEnd::DllCall("LockWorkStation")
 
@@ -37,7 +56,7 @@ ChangeVolume(app, change, timeout) {
 	} else {
 		change := "+5"
 	}
-	ChangeVolume("Spotify", change, 1000)
+	ChangeVolume("Spotify", change, 2000)
 }
 
 *NumpadPgDn::{
@@ -51,7 +70,7 @@ ChangeVolume(app, change, timeout) {
 		} else {
 			change := "-5"
 		}
-		ChangeVolume("Spotify", change, 1000)
+		ChangeVolume("Spotify", change, 2000)
 	}
 }
 
@@ -75,13 +94,13 @@ ChangeVolume(app, change, timeout) {
 	SoundSetMute(-1,, microphone)
 	if (SoundGetMute(, microphone)) {
 		TraySetIcon(muted,, true)
+		Notification("Mic Muted", 2000, 172)
 		TrayTip()
-		Timer(TrayTip, 1500, "Muted", "Microphone")
-		Timer(ToolTip, 1000, ("Mic Muted"))
+		tipTimer(TrayTip, 1500, "Muted", "Microphone")
 	} else {
 		TraySetIcon(unmuted,, false)
+		Notification("Mic Unmuted", 2000, 172)
 		TrayTip()
-		Timer(TrayTip, 1500, "Unmuted", "Microphone")
-		Timer(ToolTip, 1000, ("Mic Unmuted"))
+		tipTimer(TrayTip, 1500, "Unmuted", "Microphone")
 	}
 }
