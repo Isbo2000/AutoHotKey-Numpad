@@ -1,15 +1,10 @@
-#Requires AutoHotkey v2.0
+﻿#Requires AutoHotkey v2.0
 global minimized := false
 global MyGui := false
 global svv := "./SoundVolumeView/SoundVolumeView.exe"
-global muted := "./Icons/mute.ico"
-global unmuted := "./Icons/default.ico"
+global mutedico := "./Icons/mute.ico"
+global unmutedico := "./Icons/default.ico"
 global microphone := "Microphone (microphone)"
-
-tipTimer(funcname, timeout, params*) {
-	funcname(params*)
-	SetTimer () => funcname(), -timeout
-}
 
 Notification(text, timeout, width := 100) {
 	if (MyGui) {
@@ -95,14 +90,12 @@ ChangeVolume(app, change, timeout) {
 *NumpadDel::{
 	SoundSetMute(-1,, microphone)
 	if (SoundGetMute(, microphone)) {
-		TraySetIcon(muted,, true)
+		TraySetIcon(mutedico,, true)
 		Notification("Mic Muted", 2000, 172)
-		TrayTip()
-		tipTimer(TrayTip, 1500, "Muted", "Microphone")
+		SoundPlay("*64")
 	} else {
-		TraySetIcon(unmuted,, false)
+		TraySetIcon(unmutedico,, false)
 		Notification("Mic Unmuted", 2000, 172)
-		TrayTip()
-		tipTimer(TrayTip, 1500, "Unmuted", "Microphone")
+		SoundPlay("*64")
 	}
 }
