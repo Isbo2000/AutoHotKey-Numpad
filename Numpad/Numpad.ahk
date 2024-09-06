@@ -1,10 +1,14 @@
 #Requires AutoHotkey v2.0
-global minimized := false
-global MyGui := false
+;----------------------------------------------------------------------------------
+;Change these values:
+global microphone := "Microphone (microphone)"  ;Name of default microphone device.
+global app := "Spotify"  ;App to change volume of.
+;----------------------------------------------------------------------------------
 global svv := "./SoundVolumeView/SoundVolumeView.exe"
 global mutedico := "./Icons/mute.ico"
 global unmutedico := "./Icons/default.ico"
-global microphone := "Microphone (microphone)"
+global minimized := false
+global MyGui := false
 
 Notification(text, timeout, width := 100) {
 	if (MyGui) {
@@ -53,7 +57,7 @@ ChangeVolume(app, change, timeout) {
 	} else {
 		change := "+5"
 	}
-	ChangeVolume("Spotify", change, 2000)
+	ChangeVolume(app, change, 2000)
 }
 
 *NumpadPgDn::{
@@ -67,7 +71,7 @@ ChangeVolume(app, change, timeout) {
 		} else {
 			change := "-5"
 		}
-		ChangeVolume("Spotify", change, 2000)
+		ChangeVolume(app, change, 2000)
 	}
 }
 
