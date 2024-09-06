@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 global minimized := false
 global MyGui := false
 global svv := "./SoundVolumeView/SoundVolumeView.exe"
@@ -15,7 +15,9 @@ Notification(text, timeout, width := 100) {
 	if (MyGui) {
 		MyGui.Destroy()
 	}
+	sleep 0.5
 	global MyGui := Gui()
+	sleep 0.5
 	MyGui.Opt("+AlwaysOnTop -Caption +ToolWindow")
 	MyGui.BackColor := "000000"
 	MyGui.SetFont("s20")
