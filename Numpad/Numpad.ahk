@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 global minimized := false
 global MyGui := false
 global svv := "./SoundVolumeView/SoundVolumeView.exe"
@@ -25,8 +25,8 @@ Notification(text, timeout, width := 100) {
 
 ChangeVolume(app, change, timeout) {
 	RunWait(svv " /ChangeVolume " app " " change)
-	volume := app " Vol: " RegExReplace(RunWait(svv " /Stdout /GetPercent " app), "(?(?<=.)0|)$") "%"
-	Notification(volume, timeout, 215)
+	vol := RegExReplace(RunWait(svv " /Stdout /GetPercent " app), "(?(?<=.)0|)$")
+	Notification(app " Vol: " vol "%", timeout, 215)
 }
 
 *NumpadHome::NumpadHome
