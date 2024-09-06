@@ -20,8 +20,8 @@ Notification(text, timeout, width := 100) {
 	MyGui.BackColor := "000000"
 	MyGui.SetFont("s20")
 	MyGui.Add("Text", ("cffffff Center " width " h35"), text)
-	WinSetTransColor(" 175", MyGui)
 	MyGui.Opt("Border")
+	WinSetTransColor(" 175", MyGui)
 	MyGui.Show("x864 y971 NoActivate")
 	SetTimer () => MyGui.Destroy(), timeout
 }
