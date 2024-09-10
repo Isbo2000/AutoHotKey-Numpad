@@ -1,4 +1,4 @@
-Collection of AutoHotKey scripts by Isbo
+Collection of AutoHotKey scripts by me
 
 No guarentee that they will work on your computer or with your setup
 
