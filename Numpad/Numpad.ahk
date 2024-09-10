@@ -33,7 +33,7 @@ ChangeVolume(app, change, timeout) {
 	Notification(app " Vol: " vol "%", timeout, 215)
 }
 
-*NumpadHome::NumpadHome
+*NumpadHome::Send("<#{Tab}")
 
 *NumpadEnd::DllCall("LockWorkStation")
 
