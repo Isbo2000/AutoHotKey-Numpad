@@ -1,8 +1,6 @@
-Collection of AutoHotKey scripts by me
+AutoHotKey script that uses the numpad as a macro keyboard.
 
-No guarentee that they will work on your computer or with your setup
-
-(only one so far)
+No guarentee that it will work on your computer or with your setup.
 
 # Numpad
 **To use:**
