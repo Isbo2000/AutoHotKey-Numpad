@@ -1,5 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
-#Include ./MidiOut/MidiOut.ahk
+#Include ./MidiOut/class_midiOut.ahk
 #Include ./midi-to-macro/MidiToMacro.ahk
 global mutedico := "./Icons/mute.ico"
 global unmutedico := "./Icons/default.ico"
