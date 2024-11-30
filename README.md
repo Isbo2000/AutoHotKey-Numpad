@@ -12,9 +12,9 @@ No guarentee that it will work on your computer or with your setup.
 
 slightly modified version of [midi-to-macro](https://github.com/laurence-myers/midi-to-macro/tree/ahk-v2)
 
-slightly modified version of [class_midiOut.ahk](https://github.com/Ixiko/AHK-libs-and-classes-collection/blob/master/classes/class_midiOut.ahk)
+modified version of [class_midiOut.ahk](https://github.com/Ixiko/AHK-libs-and-classes-collection/blob/master/classes/class_midiOut.ahk)
 
 # TODO
-* Update README
+* Update README with documentation
+* Clean up midi out function
 * Split Numpad.ahk into seperate scripts
-* clean up midi out
