@@ -28,14 +28,15 @@ Main() {
 	global appConfig, currentMidiInputDeviceIndex
 	OnExit(CloseMidiInput)
 	A_TrayMenu.Add() ; Add a menu separator line
-	A_TrayMenu.Add("Show on Startup", ToggleShowOnStartup)
-	A_TrayMenu.Add("MIDI Monitor", ShowMidiMonitor)
+	A_TrayMenu.Add("MIDI IN",midiin := Menu())
+	midiin.Add("Show on Startup", ToggleShowOnStartup)
+	midiin.Add("MIDI Monitor", ShowMidiMonitor)
 	ReadConfig()
 	wasMidiOpened := MaybeOpenMidiInput()
 	if (appConfig.showOnStartup) {
-		A_TrayMenu.Check("Show on Startup")
+		midiin.Check("Show on Startup")
 	} else {
-		A_TrayMenu.Uncheck("Show on Startup")
+		midiin.Uncheck("Show on Startup")
 	}
 
 	if (!wasMidiOpened || appConfig.showOnStartup) {
