@@ -17,3 +17,4 @@ slightly modified version of [class_midiOut.ahk](https://github.com/Ixiko/AHK-li
 # TODO
 * Update README
 * Split Numpad.ahk into seperate scripts
+* clean up midi out
