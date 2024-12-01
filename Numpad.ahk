@@ -1,5 +1,4 @@
 ﻿#Requires AutoHotkey v2.0
-#Include ./Scripts/MIDI.ahk
 global mutedico := "./Icons/mute.ico"
 global unmutedico := "./Icons/default.ico"
 global minimized := false
@@ -44,6 +43,6 @@ Notification(text, timeout, width := 100) {
 	SetTimer () => MyGui.Destroy(), timeout
 }
 
-MidiInit()
+#Include ./Scripts/MIDI.ahk
 
 #Include ./Scripts/Hotkeys.ahk
