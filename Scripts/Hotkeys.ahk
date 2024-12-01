@@ -23,9 +23,9 @@
 	}
 }
 
-#SuspendExempt true
-
 *NumpadHome::RunWait("./vmcli/vmcli.exe Command.Restart=1",,"Hide")
+
+#SuspendExempt true
 
 *NumpadEnd::DllCall("LockWorkStation")
 
