@@ -15,7 +15,7 @@ MaybeOpenMidiInput() {
 		; the stored device name matches the actual device name
 		and (
 			StrLen(appConfig.midiInDeviceName) == 0
-			or GetMidiDeviceName(appConfig.midiInDevice) == appConfig.midiInDeviceName
+			or GetMidiInputDeviceName(appConfig.midiInDevice) == appConfig.midiInDeviceName
 		)
 	) {
 		OpenMidiInput(appConfig.midiInDevice, OnMidiData)
@@ -24,21 +24,40 @@ MaybeOpenMidiInput() {
 	return false
 }
 
+MaybeOpenMidiOutput() {
+	global appConfig, currentMidiOutputDeviceIndex
+
+	if (
+		appConfig.midiOutDevice >= 0
+		; Open the MIDI output, if we don't have a "device name" stored, or if
+		; the stored device name matches the actual device name
+		and (
+			StrLen(appConfig.midiOutDeviceName) == 0
+			or GetMidiOutputDeviceName(appConfig.midiOutDevice) == appConfig.midiOutDeviceName
+		)
+	) {
+		OpenMidiOutput(appConfig.midiOutDevice)
+		return true
+	}
+	return false
+}
+
 Main() {
-	global appConfig, currentMidiInputDeviceIndex
-	OnExit(CloseMidiInput)
+	global appConfig, currentMidiInputDeviceIndex, currentMidiOutputDeviceIndex
+	OnExit(CloseMidi)
 	A_TrayMenu.Add() ; Add a menu separator line
 	A_TrayMenu.Add("Show on Startup", ToggleShowOnStartup)
 	A_TrayMenu.Add("MIDI Monitor", ShowMidiMonitor)
 	ReadConfig()
-	wasMidiOpened := MaybeOpenMidiInput()
+	wasMidiInputOpened := MaybeOpenMidiInput()
+	wasMidiOutputOpened := MaybeOpenMidiOutput()
 	if (appConfig.showOnStartup) {
 		A_TrayMenu.Check("Show on Startup")
 	} else {
 		A_TrayMenu.Uncheck("Show on Startup")
 	}
 
-	if (!wasMidiOpened || appConfig.showOnStartup) {
+	if (!wasMidiInputOpened || !wasMidiOutputOpened || appConfig.showOnStartup) {
 		ShowMidiMonitor()
 	}
 }

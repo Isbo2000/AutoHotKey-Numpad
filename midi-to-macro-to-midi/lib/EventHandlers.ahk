@@ -35,12 +35,48 @@ OnMidiData(hInput, midiMessage, *) {
 	}
 }
 
+;Midi output
+ControlChange(Control, Value, Channel := 0) {
+	Channel := (Channel < 1 || Channel > 16) ? 0 : Channel
+	Msg := ((Value & 0xff) << 16) | ((Control & 0xff) << 8) | (Channel | 0xB0)
+	Return ShortMessage(Msg)
+}
+NoteOn(Note, Channel := 0, Velocity := 127) { ; since velocity is rarely used, I put it after channel
+	Channel := (Channel < 1 || Channel > 16) ? 0 : Channel
+	Msg := ((Velocity & 0xFF) << 16) | ((Note & 0xFF) << 8) | (Channel | 0xF) | 0x90
+	Return ShortMessage(Msg)
+}
+NoteOff(Note, Channel := 0, Velocity := 127) { ; since velocity is rarely used, I put it after channel
+	Channel := (Channel < 1 || Channel > 16) ? 0 : Channel
+	Msg := ((Velocity & 0xFF) << 16) | ((Note & 0xFF) << 8) | (Channel | 0xF) | 0x80
+	Return ShortMessage(Msg)
+}
+ShortMessage(Msg) {
+	loop:
+	if (IsSet(currentMidiOutputDeviceHandle)) {
+		DllCall("Winmm.dll\midiOutShortMsg", "Ptr", currentMidiOutputDeviceHandle, "UInt", Msg, "UInt")
+		Return
+	} else {
+		sleep(100)
+		goto("loop")
+	}
+	;Return !DllCall("Winmm.dll\midiOutShortMsg", "Ptr", currentMidiOutputDeviceHandle, "UInt", Msg, "UInt")
+}
+
 ; Callback for the MIDI input dropdown list
 OnMidiInputChange(control, *) {
 	deviceIndex := control.Value - 1
 	OpenMidiInput(deviceIndex, OnMidiData)
-	deviceName := GetMidiDeviceName(deviceIndex)
-	WriteConfigMidiDevice(deviceIndex, deviceName)
+	deviceName := GetMidiInputDeviceName(deviceIndex)
+	WriteConfigMidiInputDevice(deviceIndex, deviceName)
+	AppendMidiOutputRow("Device", deviceName)
+}
+
+OnMidiOutputChange(control, *) {
+	deviceIndex := control.Value - 1
+	OpenMidiOutput(deviceIndex)
+	deviceName := GetMidiOutputDeviceName(deviceIndex)
+	WriteConfigMidiOutputDevice(deviceIndex, deviceName)
 	AppendMidiOutputRow("Device", deviceName)
 }
 

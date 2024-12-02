@@ -1,14 +1,9 @@
 #Requires AutoHotkey v2.0
-#Include ../macro-to-midi/class_midiOut.ahk
-#Include ../midi-to-macro/MidiToMacro.ahk
+#Include ../midi-to-macro-to-midi/MidiToMacro.ahk
 
 ;MIDI out
-MidiInit() {
-    global midi := MidiOut(1)
-    midi.Volume := 100
-    for (l in [1,2,3,4,5,6,7,8,9,10]) {
-        midi.controlChange(7,volumes[l],l)
-    }
+for (l in [1,2,3,4,5,6,7,8,9,10]) {
+	controlChange(7,volumes[l],l)
 }
 
 MidiVolume(channels,value,mode := 7) {
@@ -18,7 +13,7 @@ MidiVolume(channels,value,mode := 7) {
 		v := value
 	}
 	for (c in channels) {
-		midi.controlChange(mode,v,c)
+		controlChange(mode,v,c)
 		if (mode = 7) {
 			volumes[c] := v
 		}

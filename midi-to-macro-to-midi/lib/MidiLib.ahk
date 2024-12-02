@@ -1,8 +1,13 @@
 #Requires AutoHotkey v2
 
-global currentMidiInputDeviceHandle, currentMidiInputDeviceIndex
+global currentMidiInputDeviceHandle, currentMidiInputDeviceIndex, currentMidiOutputDeviceHandle, currentMidiOutputDeviceIndex
 
-CloseMidiInput(*) {
+CloseMidi(*) {
+	CloseMidiInput()
+	CloseMidiOutput()
+}
+
+CloseMidiInput() {
 	global currentMidiInputDeviceHandle, currentMidiInputDeviceIndex
 
 	if (IsSet(currentMidiInputDeviceHandle)) {
@@ -13,7 +18,18 @@ CloseMidiInput(*) {
 	currentMidiInputDeviceIndex := unset
 }
 
-GetMidiDeviceName(deviceIndex) {
+CloseMidiOutput() {
+	global currentMidiOutputDeviceHandle, currentMidiOutputDeviceIndex
+
+	if (IsSet(currentMidiOutputDeviceHandle)) {
+		DllCall("Winmm.dll\midiOutReset", "Ptr", currentMidiOutputDeviceHandle, "UInt")
+		DllCall("Winmm.dll\midiOutClose", "Ptr", currentMidiOutputDeviceHandle, "UInt")
+	}
+	currentMidiOutputDeviceHandle := unset
+	currentMidiOutputDeviceIndex := unset
+}
+
+GetMidiInputDeviceName(deviceIndex) {
 	; TODO: should we be calling the ANSI version directly, or let AHK decide on W vs A?
 	; TODO: should we be parsing the port name in UTF-8, or is it some other encoding?
 	midiInCapabilitiesSize := 50
@@ -28,18 +44,40 @@ GetMidiDeviceName(deviceIndex) {
 	return portName
 }
 
+GetMidiOutputDeviceName(deviceIndex) {
+	Local Caps := Buffer(84, 0)
+    If DllCall("Winmm.dll\midiOutGetDevCapsW", "Ptr", deviceIndex, "Ptr", Caps.Ptr, "UInt", 84, "UInt") {
+		Return ""
+	}
+    Return StrGet(Caps.Ptr + 8, 32, "UTF-16")
+}
+
 LoadMidiInputs() {
 	midiInputs := Array()
 	numPorts := DllCall("winmm.dll\midiInGetNumDevs")
 
 	Loop numPorts {
-		portName := GetMidiDeviceName(A_Index - 1)
+		portName := GetMidiInputDeviceName(A_Index - 1)
 		if (portName) {
 			midiInputs.Push(portName)
 		}
 	}
 
 	return midiInputs
+}
+
+LoadMidiOutputs() {
+	midiOutputs := Array()
+	numPorts := DllCall("Winmm.dll\midiOutGetNumDevs", "UInt")
+
+	Loop numPorts {
+		portName := GetMidiOutputDeviceName(A_Index - 1)
+		if (portName) {
+			midiOutputs.Push(portName)
+		}
+	}
+
+	return midiOutputs
 }
 
 OpenMidiInput(midiInputDeviceIndex, onMidiMessageCallback) {
@@ -66,4 +104,18 @@ OpenMidiInput(midiInputDeviceIndex, onMidiMessageCallback) {
 	OnMessage(0x3C3, onMidiMessageCallback) ; MM_MIM_DATA, https://learn.microsoft.com/en-us/windows/win32/multimedia/mm-mim-data
 	
 	currentMidiInputDeviceIndex := midiInputDeviceIndex
+}
+
+OpenMidiOutput(midiOutputDeviceIndex) {
+	global currentMidiOutputDeviceHandle, currentMidiOutputDeviceIndex
+
+	Handle := 0
+	result := DllCall("Winmm.dll\midiOutOpen", "Ptr*", &Handle, "UInt", MidiOutputDeviceIndex, "Ptr", 0, "Ptr", 0, "UInt", 0, "UInt")
+
+	if (result) {
+		MsgBox("Failed to call midiOutOpen for device ID " . midiOutputDeviceIndex)
+	}
+
+	currentMidiOutputDeviceHandle := Handle
+	currentMidiOutputDeviceIndex := midiOutputDeviceIndex
 }

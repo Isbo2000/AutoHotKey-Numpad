@@ -1,7 +1,6 @@
 #Requires AutoHotkey v2
 #include CommonFunctions.ahk
 #include MidiLib.ahk
-;#include ..\MidiRules.ahk
 #include EventHandlers.ahk
 
 global lvInEvents, lvOutEvents, midiMonitor
@@ -57,6 +56,14 @@ ShowMidiMonitor(*) {
 		ddlMidiInput.Value := currentMidiInputDeviceIndex + 1
 	}
 	ddlMidiInput.OnEvent("Change", OnMidiInputChange)
+	;midi outputs
+	midiOutputOptions := LoadMidiOutputs()
+	midiMonitor.Add("Text", "X300 Y5", "MIDI Output")
+	ddlMidiOutput := midiMonitor.Add("DropDownList", "X260 Y20 W140", midiOutputOptions)
+	if (IsSet(currentMidiOutputDeviceIndex)) {
+		ddlMidiOutput.Value := currentMidiOutputDeviceIndex + 1
+	}
+	ddlMidiOutput.OnEvent("Change", OnMidiOutputChange)
 	; List views
 	listViewStyle := "W220 R11 BackgroundBlack Count10"
 	; List view - MIDI input
