@@ -10,7 +10,7 @@ No guarentee that it will work on your computer or with your setup.
 ## Third-party software used:
 modified version of [midi-to-macro](https://github.com/laurence-myers/midi-to-macro/) by [Laurence Myers](https://github.com/laurence-myers)
 
-Based midi output code on [MidiOut.ahk](https://www.autohotkey.com/boards/viewtopic.php?style=8&t=119087) (Original is [class_midiOut.ahk](https://github.com/Ixiko/AHK-libs-and-classes-collection/blob/master/classes/class_midiOut.ahk) by Bentschi)
+based midi output code on [MidiOut.ahk](https://www.autohotkey.com/boards/viewtopic.php?style=8&t=119087) (Original is [class_midiOut.ahk](https://github.com/Ixiko/AHK-libs-and-classes-collection/blob/master/classes/class_midiOut.ahk) by Bentschi)
 
 [SoundVolumeView](https://www.nirsoft.net/utils/sound_volume_view.html) by [Nir Sofer](https://www.nirsoft.net/about_nirsoft_freeware.html)
 
