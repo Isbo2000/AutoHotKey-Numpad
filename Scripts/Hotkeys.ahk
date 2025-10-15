@@ -11,7 +11,7 @@
 	MidiVolume(channels,127,122)
 }
 
-*NumpadDown::MidiVolume([6,7,8],-1)
+*NumpadDown::MidiVolume([4],-1)
 
 *NumpadPgUp::MidiVolume([5],1)
 
