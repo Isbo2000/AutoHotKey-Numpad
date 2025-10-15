@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 
-*NumpadUp::MidiVolume([6,7,8],1)
+*NumpadUp::MidiVolume([4],1)
 
 *NumpadClear::{
 	if (GetKeyState("Shift") || GetKeyState("Control")) {
@@ -11,7 +11,7 @@
 	MidiVolume(channels,127,122)
 }
 
-*NumpadDown::MidiVolume([6,7,8],-1)
+*NumpadDown::MidiVolume([4],-1)
 
 *NumpadPgUp::MidiVolume([5],1)
 
