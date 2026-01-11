@@ -9,13 +9,14 @@ global midiRequest := false
 ;Change these values:
 global microphone := "Microphone (microphone)"  ;Name of default microphone device.
 global app := "Spotify"  ;App to change volume of.
+global voicemeeter := "voicemeeter8x64.exe" ;Voicemeeter instance.
 ;                 [ S1, S2, S3, S4, S5, A1, A2, A3, B1, B2]
 global volumes := [105, 105,105,64, 51, 105,105,105,105,105] ;Voicemeeter default volumes
 ;----------------------------------------------------------------------------------
 
 Suspend
 CheckProg:
-if (!ProcessExist("voicemeeterpro_x64.exe") || !ProcessExist("loopMIDI.exe")) {
+if (!ProcessExist(voicemeeter) || !ProcessExist("loopMIDI.exe")) {
 	Sleep(100)
 	goto('CheckProg')
 } else {
