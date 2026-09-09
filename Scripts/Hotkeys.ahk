@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 
-*NumpadUp::MidiVolume([6],1)
+*NumpadUp::MidiVolume([6,8],1)
 
 *NumpadClear::{
 	if (GetKeyState("Shift") || GetKeyState("Control")) {
@@ -11,7 +11,7 @@
 	MidiVolume(channels,127,122)
 }
 
-*NumpadDown::MidiVolume([6],-1)
+*NumpadDown::MidiVolume([6,8],-1)
 
 *NumpadPgUp::MidiVolume([7],1)
 
@@ -56,7 +56,7 @@
 *NumpadDel::{
 	if (microphone == "none") {
 		MidiVolume([1],127,122)
-		
+
 	} else {
 		SoundSetMute(-1,, microphone)
 		if (SoundGetMute(, microphone)) {
