@@ -23,10 +23,7 @@
 	}
 }
 
-*NumpadHome::{
-	controlChange(7,0,6)
-	;RunWait("./vmcli/vmcli.exe Command.Restart=1",,"Hide")
-}
+*NumpadHome::RunWait("./vmcli/vmcli.exe Command.Restart=1",,"Hide")
 
 #SuspendExempt true
 
