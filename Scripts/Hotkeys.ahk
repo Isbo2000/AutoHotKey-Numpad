@@ -1,25 +1,25 @@
 #Requires AutoHotkey v2.0
 
-*NumpadUp::MidiVolume([4],1)
+*NumpadUp::MidiVolume([6,8],1)
 
 *NumpadClear::{
 	if (GetKeyState("Shift") || GetKeyState("Control")) {
-		channels := [8]
+		channels := [12]
 	} else {
-		channels := [6,7]
+		channels := [9,10,11]
 	}
 	MidiVolume(channels,127,122)
 }
 
-*NumpadDown::MidiVolume([4],-1)
+*NumpadDown::MidiVolume([6,8],-1)
 
-*NumpadPgUp::MidiVolume([5],1)
+*NumpadPgUp::MidiVolume([7],1)
 
 *NumpadPgDn::{
 	if (minimized) {
 		global minimized := false
 	} else if (!minimized) {
-		MidiVolume([5],-1)
+		MidiVolume([7],-1)
 	}
 }
 
@@ -51,15 +51,20 @@
 }
 
 *NumpadDel::{
-	SoundSetMute(-1,, microphone)
-	if (SoundGetMute(, microphone)) {
-		TraySetIcon(mutedico,, true)
-		Notification("Mic Muted", 2000, 172)
-		SoundPlay("*64")
+	if (microphone == "none") {
+		MidiVolume([1],127,122)
+		
 	} else {
-		TraySetIcon(unmutedico,, false)
-		Notification("Mic Unmuted", 2000, 172)
-		SoundPlay("*64")
+		SoundSetMute(-1,, microphone)
+		if (SoundGetMute(, microphone)) {
+			TraySetIcon(mutedico,, true)
+			Notification("Mic Muted", 2000, 172)
+			SoundPlay("*64")
+		} else {
+			TraySetIcon(unmutedico,, false)
+			Notification("Mic Unmuted", 2000, 172)
+			SoundPlay("*64")
+		}
 	}
 }
 
