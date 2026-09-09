@@ -24,8 +24,12 @@ if (!ProcessExist(voicemeeter) || !ProcessExist("loopMIDI.exe")) {
 	Suspend
 }
 
-if (SoundGetMute(, microphone)) {
-	TraySetIcon(mutedico,, true)
+try {
+	if (SoundGetMute(, microphone)) {
+		TraySetIcon(mutedico,, true)
+	}
+} catch TargetError {
+	global microphone := "none"
 }
 
 Notification(text, timeout, width := 100) {

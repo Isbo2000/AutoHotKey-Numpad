@@ -53,7 +53,7 @@
 *NumpadDel::{
 	if (microphone == "none") {
 		MidiVolume([1],127,122)
-
+		
 	} else {
 		SoundSetMute(-1,, microphone)
 		if (SoundGetMute(, microphone)) {
