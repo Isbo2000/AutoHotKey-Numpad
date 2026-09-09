@@ -7,7 +7,6 @@ for (l in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]) {
 }
 
 if (microphone = "none") {
-	global midiRequest := true
 	MidiVolume([1],127,122)
 }
 
