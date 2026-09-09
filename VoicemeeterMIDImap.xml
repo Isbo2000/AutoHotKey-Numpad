@@ -2,91 +2,243 @@
 <VBAudioVoicemeeterMIDIMapping>
 <VoiceMeeterMidiMap>
 	<MidiMapName></MidiMapName>
-	<MidiMapItem id='InGainFader1' b1='B1' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='InGainFader2' b1='B2' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='InGainFader3' b1='B3' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VInGainFader1' b1='B4' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VInGainFader2' b1='B5' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InGainFader1' b1='B0' b2='07' b3='66' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InGainFader2' b1='B1' b2='07' b3='6A' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InGainFader3' b1='B2' b2='07' b3='6A' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InGainFader4' b1='B3' b2='07' b3='01' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InGainFader5' b1='B4' b2='07' b3='01' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInGainFader1' b1='B5' b2='07' b3='41' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInGainFader2' b1='B6' b2='07' b3='34' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInGainFader3' b1='B7' b2='07' b3='41' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='LRPanIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='LRPanIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='LRPanIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LRPanIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LRPanIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='LRPanVIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='LRPanVIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LRPanVIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='ResetLRPanIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='ResetLRPanIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='ResetLRPanIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='ResetLRPanIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='ResetLRPanIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='ResetLRPanVIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='ResetLRPanVIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='InMute1' b1='B1' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='InMute2' b1='B2' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='InMute3' b1='B3' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VInMute1' b1='B4' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VInMute2' b1='B5' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='ResetLRPanVIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InMute1' b1='B0' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InMute2' b1='B1' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InMute3' b1='B2' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InMute4' b1='B3' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InMute5' b1='B4' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInMute1' b1='B5' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInMute2' b1='B6' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInMute3' b1='B7' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InSolo1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InSolo2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InSolo3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InSolo4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InSolo5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VInSolo1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VInSolo2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInSolo3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VInMuteC1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VInMuteC2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInMuteC3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InComp1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InComp2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InComp3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InComp4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InComp5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InGate1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InGate2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InGate3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InGate4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InGate5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DenoiserIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DenoiserIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DenoiserIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DenoiserIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DenoiserIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnBypassIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnBypassIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnBypassIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnBypassIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnBypassIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnLearnIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnLearnIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnLearnIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnLearnIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DnLearnIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchOnIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchOnIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchOnIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchOnIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchOnIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchDryWetIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchDryWetIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchDryWetIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchDryWetIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchDryWetIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchValueIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchValueIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchValueIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchValueIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='PitchValueIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LoFormantIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LoFormantIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LoFormantIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LoFormantIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='LoFormantIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MedFormantIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MedFormantIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MedFormantIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MedFormantIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MedFormantIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='HiFormantIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='HiFormantIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='HiFormantIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='HiFormantIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='HiFormantIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='GroupFormantIn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='GroupFormantIn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='GroupFormantIn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='GroupFormantIn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='GroupFormantIn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InLimit1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InLimit2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='InLimit3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InLimit4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='InLimit5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VInLimit1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VInLimit2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VInLimit3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip1A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip1A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip1A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip1A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip1A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip1B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip1B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip1B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip2A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip2A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip2A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip2A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip2A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip2B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip2B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip2B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip3A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip3A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip3A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip3A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip3A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip3B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip3B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip3B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip4A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip4A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip4A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip4A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip4A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip4B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip4B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip4B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip5A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip5A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip5A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip5A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip5A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip5B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Strip5B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip5B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip6B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip7B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8A1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8A2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8A3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8A4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8A5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8B1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8B2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Strip8B3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VIn1EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VIn1EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VIn1EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VIn2EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VIn2EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VIn2EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='OutGainFader1' b1='B6' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='OutGainFader2' b1='B7' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='OutGainFader3' b1='B8' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VOutGainFader1' b1='B9' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VOutGainFader2' b1='BA' b2='07' b3='64' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='OutMute1' b1='B6' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='OutMute2' b1='B7' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='OutMute3' b1='B8' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VOutMute1' b1='B9' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
-	<MidiMapItem id='VOutMute2' b1='BA' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VIn3EQHigh' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VIn3EQMed' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VIn3EQBass' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='RevSend1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='RevSend2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='RevSend3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='RevSend4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='RevSend5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DelaySend1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DelaySend2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DelaySend3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DelaySend4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='DelaySend5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx1Send1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx1Send2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx1Send3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx1Send4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx1Send5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx2Send1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx2Send2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx2Send3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx2Send4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='Fx2Send5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutSEL1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutSEL2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutSEL3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutSEL4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutSEL5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutSEL1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutSEL2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutSEL3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutGainFader1' b1='B8' b2='07' b3='6B' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutGainFader2' b1='B9' b2='07' b3='71' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutGainFader3' b1='BA' b2='07' b3='6A' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutGainFader4' b1='BB' b2='07' b3='6A' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutGainFader5' b1='BC' b2='07' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutGainFader1' b1='BD' b2='07' b3='6A' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutGainFader2' b1='BE' b2='07' b3='6A' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutGainFader3' b1='BF' b2='07' b3='01' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutMute1' b1='B8' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutMute2' b1='B9' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutMute3' b1='BA' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutMute4' b1='BB' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutMute5' b1='BC' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutMute1' b1='BD' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutMute2' b1='BE' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutMute3' b1='BF' b2='7A' b3='7F' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='1' feed2='1' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='ToggleB1B2s1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='OutEqOn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='OutEqOn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='OutEqOn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutEqOn4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='OutEqOn5' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VOutEqOn1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='VOutEqOn2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VOutEqOn3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='TapePlay' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='TapeRec' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='TapeStop' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
@@ -94,6 +246,30 @@
 	<MidiMapItem id='TapeFF' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='TapeRePlay' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='TapeGain' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin1App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin1App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin1App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin1App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin1App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin1App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin1App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin1App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin2App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin2App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin2App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin2App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin2App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin2App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin2App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin2App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin3App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin3App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin3App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='VolCtlVin3App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin3App1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin3App2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin3App3' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
+	<MidiMapItem id='MuteCtlVin3App4' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Refresh1' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 	<MidiMapItem id='Refresh2' b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' coder='0' ptt='0' feed1='0' feed2='0' omni='0' disabled='0' feedOn='127' feedOff='0'/>
 </VoiceMeeterMidiMap>

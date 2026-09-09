@@ -2,8 +2,8 @@
 #Include ../midi-to-macro-to-midi/MidiToMacro.ahk
 
 ;MIDI out
-for (l in [1,2,3,4,5,6,7,8,9,10]) {
-	controlChange(7,volumes[l],l)
+for (l in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]) {
+	controlChange(7,volumes[l],l-1)
 }
 
 MidiVolume(channels,value,mode := 7) {
@@ -13,7 +13,7 @@ MidiVolume(channels,value,mode := 7) {
 		v := value
 	}
 	for (c in channels) {
-		controlChange(mode,v,c)
+		controlChange(mode,v,c-1)
 		if (mode = 7) {
 			volumes[c] := v
 		}
@@ -26,12 +26,12 @@ ProcessCC(device, channel, cc, value) {
 		if (cc = 7) {
 			global midiRequest := false
 			volume := Round(ConvertCCValueToScale(value, 0, 127)*100,1)
-			msg := (channel = 6)? app " Vol" : "Volume"
+			msg := (channel = 9)? app " Vol" : "Volume"
 			Notification(msg ": " volume "%", 2000, 200)
 
 		} else if (cc = 122) {
 			global midiRequest := false
-			msg := (channel = 9)? "Speakers" : "Volume"
+			msg := (channel = 12)? "Speakers" : "Volume"
 			if (value = 127) {
 				Notification(msg " Muted", 2000, 230)
 			} else if (value = 0) {
@@ -40,8 +40,8 @@ ProcessCC(device, channel, cc, value) {
 		}
 
 	} else {
-		if (channel > 0 && channel < 11 && cc = 7) {
-			volumes[channel-1] := value
+		if (channel > -1 && channel < 17 && cc = 7) {
+			volumes[channel] := value
 		} else if (cc) {
 
 		}

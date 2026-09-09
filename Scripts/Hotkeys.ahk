@@ -1,29 +1,32 @@
 #Requires AutoHotkey v2.0
 
-*NumpadUp::MidiVolume([4],1)
+*NumpadUp::MidiVolume([6],1)
 
 *NumpadClear::{
 	if (GetKeyState("Shift") || GetKeyState("Control")) {
-		channels := [8]
+		channels := [12]
 	} else {
-		channels := [6,7]
+		channels := [9,10,11]
 	}
 	MidiVolume(channels,127,122)
 }
 
-*NumpadDown::MidiVolume([4],-1)
+*NumpadDown::MidiVolume([6],-1)
 
-*NumpadPgUp::MidiVolume([5],1)
+*NumpadPgUp::MidiVolume([7],1)
 
 *NumpadPgDn::{
 	if (minimized) {
 		global minimized := false
 	} else if (!minimized) {
-		MidiVolume([5],-1)
+		MidiVolume([7],-1)
 	}
 }
 
-*NumpadHome::RunWait("./vmcli/vmcli.exe Command.Restart=1",,"Hide")
+*NumpadHome::{
+	controlChange(7,0,6)
+	;RunWait("./vmcli/vmcli.exe Command.Restart=1",,"Hide")
+}
 
 #SuspendExempt true
 

@@ -10,8 +10,9 @@ global midiRequest := false
 global microphone := "Microphone (microphone)"  ;Name of default microphone device.
 global app := "Spotify"  ;App to change volume of.
 global voicemeeter := "voicemeeter8x64.exe" ;Voicemeeter instance.
-;                 [ S1, S2, S3, S4, S5, A1, A2, A3, B1, B2]
-global volumes := [105, 105,105,64, 51, 105,105,105,105,105] ;Voicemeeter default volumes
+;channels         [ 1,  2,  3,  4,  5,  6,  7,  8,   9, 10, 11, 12, 13, 14, 15, 16]
+;names            [S1, S2, S3, S4, S5, S6, S7, S8,  A1, A2, A3, A4, A5, B1, B2, B3]
+global volumes := [97, 105,105, 0,  0, 64, 51, 64, 105,105,105,105,255,105,105,  0] ;Voicemeeter default volumes
 ;----------------------------------------------------------------------------------
 
 Suspend
