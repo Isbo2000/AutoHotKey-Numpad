@@ -54,15 +54,20 @@
 }
 
 *NumpadDel::{
-	SoundSetMute(-1,, microphone)
-	if (SoundGetMute(, microphone)) {
-		TraySetIcon(mutedico,, true)
-		Notification("Mic Muted", 2000, 172)
-		SoundPlay("*64")
+	if (microphone == "none") {
+		MidiVolume([1],127,122)
+		
 	} else {
-		TraySetIcon(unmutedico,, false)
-		Notification("Mic Unmuted", 2000, 172)
-		SoundPlay("*64")
+		SoundSetMute(-1,, microphone)
+		if (SoundGetMute(, microphone)) {
+			TraySetIcon(mutedico,, true)
+			Notification("Mic Muted", 2000, 172)
+			SoundPlay("*64")
+		} else {
+			TraySetIcon(unmutedico,, false)
+			Notification("Mic Unmuted", 2000, 172)
+			SoundPlay("*64")
+		}
 	}
 }
 
